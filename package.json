@@ -1,0 +1,38 @@
+{
+  "name": "voice-resume-maker",
+  "version": "1.0.0",
+  "description": "Full-stack voice to ATS-optimized resume maker with AI",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend-prod": "cd backend && npm start",
+    "frontend-build": "cd frontend && npm run build",
+    "build": "npm run frontend-build",
+    "test": "echo \"Run tests in backend and frontend directories\" && exit 0"
+  },
+  "keywords": [
+    "resume",
+    "voice",
+    "AI",
+    "ATS",
+    "job-application",
+    "speech-recognition",
+    "OpenAI",
+    "Ollama"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}
